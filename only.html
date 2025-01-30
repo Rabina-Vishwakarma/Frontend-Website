@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Biography Sections -->
+<div class="flex items-center justify-center min-h-screen bg-gray-50 px-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full">
+    <!-- Biography Card 1 -->
+    <div class="p-4 bg-white rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+      <!-- Header Section -->
+      <div class="flex items-center">
+        <img 
+          src="https://via.placeholder.com/150" 
+          alt="Sneha Dubey" 
+          class="w-20 h-20 rounded-full border-4 border-green-500 shadow-md"
+        />
+        <div class="ml-4">
+          <h2 class="text-xl font-bold text-gray-800">Sneha Dubey</h2>
+          <p class="text-sm text-gray-500">MLA, Vasai | Advocate for Progress</p>
+        </div>
+      </div>
+
+      <!-- Bio Summary -->
+      <p class="mt-4 text-gray-600">
+        Sneha Dubey, the MLA of Vasai, is a leader driven by her vision for sustainable development and the betterment of her constituency.
+        Her work reflects her dedication to improving the lives of Vasai’s residents through impactful policies and initiatives.
+      </p>
+
+      <!-- Toggle Button -->
+      <button 
+        onclick="toggleDetails('bio-details-1')" 
+        class="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600 focus:outline-none">
+        Read More
+      </button>
+
+      <!-- Detailed Biography (Hidden Initially) -->
+      <div id="bio-details-1" class="hidden mt-4">
+        <p class="text-gray-600">
+          Sneha Dubey has championed numerous developmental projects in Vasai, focusing on infrastructure, education, healthcare, and environmental conservation.
+          As a proactive leader, she has initiated community programs, addressed local concerns, and ensured the voices of her constituents are heard at higher levels of governance.
+        </p>
+        <p class="mt-2 text-gray-600">
+          Her approach to leadership emphasizes inclusivity and innovation. Sneha actively engages with the youth, encourages local businesses, and prioritizes sustainability in all her efforts, making Vasai a model constituency.
+        </p>
+      </div>
+    </div>
+
+    <!-- Biography Card 2 -->
+    <div class="p-4 bg-white rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+      <!-- Header Section -->
+      <div class="flex items-center">
+        <img 
+          src="https://via.placeholder.com/150" 
+          alt="Sneha Dubey" 
+          class="w-20 h-20 rounded-full border-4 border-blue-500 shadow-md"
+        />
+        <div class="ml-4">
+          <h2 class="text-xl font-bold text-gray-800">Sneha Dubey</h2>
+          <p class="text-sm text-gray-500">MLA, Vasai | Driving Change</p>
+        </div>
+      </div>
+
+      <!-- Bio Summary -->
+      <p class="mt-4 text-gray-600">
+        Sneha Dubey’s leadership in Vasai has been transformative, focusing on empowering communities and promoting sustainable initiatives.
+        She continues to address the region’s challenges with innovative solutions and a people-first approach.
+      </p>
+
+      <!-- Toggle Button -->
+      <button 
+        onclick="toggleDetails('bio-details-2')" 
+        class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 focus:outline-none">
+        Read More
+      </button>
+
+      <!-- Detailed Biography (Hidden Initially) -->
+      <div id="bio-details-2" class="hidden mt-4">
+        <p class="text-gray-600">
+          Through her efforts, Sneha has improved public transportation, enhanced access to healthcare, and initiated programs to boost local businesses.
+          Her commitment to creating opportunities for the youth and her focus on sustainable urban planning have made her a respected figure in Vasai.
+        </p>
+        <p class="mt-2 text-gray-600">
+          Sneha’s ability to connect with her constituents and address their concerns ensures continuous progress and development in the region.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript for Toggle -->
+<script>
+  function toggleDetails(id) {
+    const bioDetails = document.getElementById(id);
+    bioDetails.classList.toggle('hidden');
+  }
+</script>
+
+</body>
+</html>
